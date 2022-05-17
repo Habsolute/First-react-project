@@ -6,13 +6,6 @@ function ExpensesFilter(props) {
 
   function yearChangeHandler(e) {
     setEnteredYear(e.target.value);
-    console.log(e.target.value);
-    // setEnteredYear(e.target.value);
-    // console.log(enteredYear);
-
-    // const expenseSelectedYear = {
-    //   year: enteredYear,
-    // };
 
     props.onSaveSelectedYear(e.target.value);
   }
